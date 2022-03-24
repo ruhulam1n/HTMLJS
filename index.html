@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordian</title>
+</head>
+<body>
+    <div class="accordians-p">
+        <ol class="accordians">
+            <li>
+                <h3 class="accordian-header">At a glance</h3>
+                <div class="accordian-content"><p>1.<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis obcaecati eligendi architecto eum facere earum quis tempora eius totam assumenda, fugit atque cupiditate veritatis nemo, a inventore aut? Quas, accusantium!</span><span>Sequi eius adipisci dolor, eum ipsum commodi cum! Iste sit illo explicabo facilis deleniti consequuntur cumque. Quis voluptatibus at, doloribus hic veniam asperiores ipsam animi illum minima, id enim culpa?</span><span>Impedit ab, officia doloribus quaerat ipsum earum repudiandae, libero quod nisi expedita et assumenda ad eligendi, saepe similique! Atque sapiente voluptatibus minus tenetur, error dolore! Harum corporis aliquid maiores doloribus!</span></p></div>
+            </li>
+            <li>
+                <h3 class="accordian-header">What we do</h3>
+                <div class="accordian-content"><p>2.<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis obcaecati eligendi architecto eum facere earum quis tempora eius totam assumenda, fugit atque cupiditate veritatis nemo, a inventore aut? Quas, accusantium!</span><span>Sequi eius adipisci dolor, eum ipsum commodi cum! Iste sit illo explicabo facilis deleniti consequuntur cumque. Quis voluptatibus at, doloribus hic veniam asperiores ipsam animi illum minima, id enim culpa?</span><span>Impedit ab, officia doloribus quaerat ipsum earum repudiandae, libero quod nisi expedita et assumenda ad eligendi, saepe similique! Atque sapiente voluptatibus minus tenetur, error dolore! Harum corporis aliquid maiores doloribus!</span></p></div>
+            </li>
+            <li>
+                <h3 class="accordian-header">How we do it</h3>
+                <div class="accordian-content"><p>3.<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis obcaecati eligendi architecto eum facere earum quis tempora eius totam assumenda, fugit atque cupiditate veritatis nemo, a inventore aut? Quas, accusantium!</span><span>Sequi eius adipisci dolor, eum ipsum commodi cum! Iste sit illo explicabo facilis deleniti consequuntur cumque. Quis voluptatibus at, doloribus hic veniam asperiores ipsam animi illum minima, id enim culpa?</span><span>Impedit ab, officia doloribus quaerat ipsum earum repudiandae, libero quod nisi expedita et assumenda ad eligendi, saepe similique! Atque sapiente voluptatibus minus tenetur, error dolore! Harum corporis aliquid maiores doloribus!</span></p></div>
+            </li>
+            <li>
+                <h3 class="accordian-header">Where we reach</h3>
+                <div class="accordian-content"><p>4.<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis obcaecati eligendi architecto eum facere earum quis tempora eius totam assumenda, fugit atque cupiditate veritatis nemo, a inventore aut? Quas, accusantium!</span><span>Sequi eius adipisci dolor, eum ipsum commodi cum! Iste sit illo explicabo facilis deleniti consequuntur cumque. Quis voluptatibus at, doloribus hic veniam asperiores ipsam animi illum minima, id enim culpa?</span><span>Impedit ab, officia doloribus quaerat ipsum earum repudiandae, libero quod nisi expedita et assumenda ad eligendi, saepe similique! Atque sapiente voluptatibus minus tenetur, error dolore! Harum corporis aliquid maiores doloribus!</span></p></div>
+            </li>
+            <li>
+                <h3 class="accordian-header">How</h3>
+                <div class="accordian-content"><p>5.<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis obcaecati eligendi architecto eum facere earum quis tempora eius totam assumenda, fugit atque cupiditate veritatis nemo, a inventore aut? Quas, accusantium!</span><span>Sequi eius adipisci dolor, eum ipsum commodi cum! Iste sit illo explicabo facilis deleniti consequuntur cumque. Quis voluptatibus at, doloribus hic veniam asperiores ipsam animi illum minima, id enim culpa?</span><span>Impedit ab, officia doloribus quaerat ipsum earum repudiandae, libero quod nisi expedita et assumenda ad eligendi, saepe similique! Atque sapiente voluptatibus minus tenetur, error dolore! Harum corporis aliquid maiores doloribus!</span></p></div>
+            </li>
+        </ul>
+    </div>
+
+    <style>
+    h3{
+        padding: 7px 0 7px 15px;
+        font-family: 'Open Sans Bold', Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        height: auto;
+        line-height: 26px;
+        color: #000;
+        display: block;
+        text-transform: uppercase;
+        text-align: left;
+        border: thin solid black;
+        cursor: pointer;
+    }
+    .accordian-content:not(.open-c){    
+        display: none;
+        transition: display, opacity, height 500ms linear;
+    }
+    .accordian-content{
+        display: block;
+        transition: display, opacity, height 500ms linear;
+    }
+    
+    </style>
+    <!-- <div class="accordion">
+        <h3 class="acc-header glanceH">At a glance</h3>
+        <div class="acc-content glanceC slider" >
+          <div class="hero-video">
+          </div>
+        </div>
+        <h3 class="acc-header">What we do</h3>
+        <div class="acc-content" >
+          <div class="hero-video what-we-do">
+          </div>
+        </div>
+        <h3 class="acc-header">How we do it</h3>
+        <div class="acc-content how" >
+        </div>
+        <h3 class="acc-header">Where we reach</h3>
+        <div class="acc-content where" >
+        </div>
+        <h3 class="acc-header">How</h3>
+        <div class="acc-content" >
+        </div>
+      </div> -->
+      <script>
+          let ah = document.querySelectorAll('.accordian-header')
+          let ac = document.querySelectorAll('.accordian-content')
+          ah.forEach(elh =>{
+            let state = false
+            elh.onclick = function(el,){
+
+               this.classList.toggle('open-a')
+               acnext = this.nextElementSibling
+                
+                ahn = [...ah].map( (mel)=>{
+ 
+                    mel.classList.remove('open-a')
+
+                    if( acnext.classList.contains('open-c') ){
+
+                        this.classList.remove('open-a')
+
+                        acnext.classList.remove('open-c')
+
+                    }else{
+
+                        acn = [...ac].forEach(test =>{
+ 
+                            if(test.classList.contains('open-c') ){
+
+                                test.classList.remove('open-c')
+                            }
+
+                        })
+
+                        this.classList.add('open-a')
+
+                        acnext.classList.add('open-c')
+
+                    }
+                    
+                })
+                 
+            }
+          })
+      </script>
+</body>
+</html>
